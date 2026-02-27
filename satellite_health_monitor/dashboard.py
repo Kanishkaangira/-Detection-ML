@@ -8,9 +8,9 @@ import time
 st.markdown("""
 <style>
 
-/* Keep header visible */
+/* Keep header hidden */
 [data-testid="stHeader"] {
-    visibility: visible;
+    visibility: hidden;
 }
 
 /* Hide GitHub + external links in header */
