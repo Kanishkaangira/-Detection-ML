@@ -4,6 +4,14 @@ import numpy as np
 import plotly.graph_objects as go
 import time
 
+st.markdown("""
+<style>
+#MainMenu {visibility: hidden;}
+header {visibility: hidden;}
+footer {visibility: hidden;}
+</style>
+""", unsafe_allow_html=True)
+
 from data_simulation import generate_telemetry, inject_faults
 from feature_engineering import engineer_features
 from anomaly_detection import detect_anomalies
