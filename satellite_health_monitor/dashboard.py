@@ -4,11 +4,30 @@ import numpy as np
 import plotly.graph_objects as go
 import time
 
+
 st.markdown("""
 <style>
-#MainMenu {visibility: hidden;}
-header {visibility: hidden;}
-footer {visibility: hidden;}
+
+/* Keep header visible */
+[data-testid="stHeader"] {
+    visibility: visible;
+}
+
+/* Hide GitHub + external links in header */
+[data-testid="stToolbar"] a {
+    display: none;
+}
+
+/* Hide footer branding */
+footer {
+    visibility: hidden;
+}
+
+/* Hide deploy button if visible */
+button[kind="header"] {
+    display: none;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
